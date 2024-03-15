@@ -14,15 +14,12 @@ public class SecurityOps {
         text = text.replaceAll("[\\s\\p{Punct}]", "");
         for (int i = 0; i < text.length(); i++) {
             char word = text.charAt(i);
-            
-            if (Character.isLetterOrDigit(word)) {
                 if (i % 2 != 0) { // if odd index, append it to oddWords
                 	oddWords.append(word);
                 } else { // if even index, append it to evenWords
                     evenWords.append(word);
                 }
             }
-        }
 
         return evenWords.toString() + oddWords.toString();
     }
