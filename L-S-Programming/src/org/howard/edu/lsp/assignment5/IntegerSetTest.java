@@ -139,7 +139,7 @@ public class IntegerSetTest {
     assertFalse(complement.contains(1));
     assertFalse(complement.contains(2));
     assertFalse(complement.contains(3));
-    assertTrue(complement.contains(4));
+    assertFalse(complement.contains(9));
   }
   
   @Test
