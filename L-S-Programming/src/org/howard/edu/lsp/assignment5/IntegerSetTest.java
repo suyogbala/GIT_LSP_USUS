@@ -128,7 +128,7 @@ public class IntegerSetTest {
     assertTrue(diff.contains(1));
     assertFalse(diff.contains(2));
     assertFalse(diff.contains(3));
-    assertFalse(diff.contains(4));
+    assertFalse(diff.contains(0));
   }
   
   @Test
