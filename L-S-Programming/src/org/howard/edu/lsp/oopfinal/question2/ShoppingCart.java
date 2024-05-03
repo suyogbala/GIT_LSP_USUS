@@ -8,7 +8,7 @@ class ShoppingCart {
      this.paymentStrategy = paymentStrategy;
  }
 
- public void checkout(double amount) {
-     paymentStrategy.pay(amount);
+ public void checkout(double paisa) {
+     paymentStrategy.pay(paisa);
  }
 }
